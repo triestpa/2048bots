@@ -28,7 +28,15 @@ setInterval(function() {
     }
       ,2000)
   }
-  else if (stackTopRight(Math.floor(2 * Math.random()))) {}
+
+  randmove = Math.floor(2 * Math.random());
+  if (randmove == 0)
+    othermove = 1;
+  else
+    othermove = 0;
+
+  if (stackTopRight(randmove)) {}
+  else if (stackTopRight(othermove)) {}
   else if (stackTopRight(3)) {}
   else if (stackTopRight(2)) {}
 }, 250);
